@@ -1,0 +1,5 @@
+from instafilter import Instafilter
+model=Instafilter("lo-fi")
+new_image=model("image.jpg")
+import cv2
+cv2.imwrite("modified_image.jpg",new_image) 
